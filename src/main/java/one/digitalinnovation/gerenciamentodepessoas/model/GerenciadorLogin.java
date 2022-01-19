@@ -1,5 +1,6 @@
 package one.digitalinnovation.gerenciamentodepessoas.model;
 
+import lombok.Builder;
 
 public class GerenciadorLogin {
 

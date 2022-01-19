@@ -1,6 +1,7 @@
 package one.digitalinnovation.gerenciamentodepessoas.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import lombok.Builder;
 import org.springframework.format.annotation.DateTimeFormat;
 
 import javax.persistence.*;
@@ -9,6 +10,7 @@ import java.time.LocalDateTime;
 @Entity
 @Table(name = "tb_entrada")
 public class Entrada {
+
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private long id;

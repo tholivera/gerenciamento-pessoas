@@ -1,6 +1,7 @@
 package one.digitalinnovation.gerenciamentodepessoas.model;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import lombok.Builder;
 import org.springframework.format.annotation.DateTimeFormat;
 
 import javax.persistence.*;

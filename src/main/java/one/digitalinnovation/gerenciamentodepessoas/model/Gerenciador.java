@@ -16,6 +16,7 @@ import javax.validation.constraints.Size;
 
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import lombok.Builder;
 
 @Entity
 @Table(name = "tb_gerenciador")

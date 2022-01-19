@@ -6,10 +6,13 @@ import javax.persistence.*;
 import javax.validation.constraints.NotBlank;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import lombok.Builder;
+import lombok.Data;
 
 @Entity
 @Table(name = "tb_funcionario")
 public class Funcionario {
+
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private long id;
@@ -72,6 +75,7 @@ public class Funcionario {
 	public void setEntrada(Entrada entrada) {
 		this.entrada.add(entrada);
 	}
+
 	public List<Saida> getSaida() {
 		return saida;
 	}
